@@ -11,3 +11,9 @@ It should allow Annawon to post links and posters to events he will be attending
 This should be as easy as posting to instagram.
 
 It should have a portal that takes users to first light fashion.
+
+## TODO: 
+
+- look at hosting services.
+
+- look into [wix](https://www.wix.com/). Annawon meantioned it would be a way to allow him to update site more easily...
