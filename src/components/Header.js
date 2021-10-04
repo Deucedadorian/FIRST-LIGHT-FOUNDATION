@@ -35,12 +35,12 @@ const Header = () => {
                   <div className="overflowable-container overflowable-2">
                     <div className="overflowable-contents">
                       <div className="container">
-                        <ul className="tabs">
+                        <ul className="tabs decoration-none">
                           {/* <li className="overflow-button-container" style={"display: none;"} aria-hidden="true"><div className="overflow-button">
                             <a>More…</a>
                           </div></li> */}
                           <li className="overflowable-item selected" aria-hidden="false">
-                            <a href="http://www.firstlightfoundation.net/">Home</a>
+                            <a href="/" className="decoration-none">Home</a>
                           </li>
                         </ul>
                       </div>
