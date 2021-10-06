@@ -1,12 +1,12 @@
 import './App.css';
-import Header from './components/Header';
+import FoundationHeader from './components/FoundationHeader';
 import Aside from './components/Aside';
 import Home from './components/Home'
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <FoundationHeader />
       <Home />
       <Aside />
     </div>

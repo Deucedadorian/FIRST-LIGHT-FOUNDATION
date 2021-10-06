@@ -1,4 +1,4 @@
-const Header = () => {
+const FoundationHeader = () => {
   return (
     <header className="centered-top-container animating" role="banner">
       <div className="centered-top">
@@ -57,4 +57,4 @@ const Header = () => {
 }
 
 
-export default Header;
+export default FoundationHeader;
