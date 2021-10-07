@@ -15,3 +15,5 @@ const PublicEvents = () => {
     </div>
   )
 }
+
+export default PublicEvents;
