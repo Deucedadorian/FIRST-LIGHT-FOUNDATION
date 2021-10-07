@@ -8,7 +8,7 @@ const FoundationHeader = () => {
           </svg>
         </div>
         <div className="blog-name">
-          <div className="header-widget">
+        <div className="section" id="header" name="Header">
             <div>
               <h1>
                 FIRST LIGHT FOUNDATION
