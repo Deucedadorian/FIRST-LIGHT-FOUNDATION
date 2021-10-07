@@ -9,18 +9,14 @@ const FunHeader = () => {
         </div>
         <div className="blog-name">
           <div className="section" id="header" name="Header">
-            <div className="widget Header" data-version="2" id="Header1">
-              <div className="header-widget">
-                <div>
-                  <h1>
-                    First Light Foundation
-                  </h1>
-                </div>
-                <p>
-                  “Our future is only as strong as the foundation it’s built upon”
-                </p>
-              </div>
+            <div>
+              <h1>
+                FIRST LIGHT FUN
+              </h1>
             </div>
+            <p>
+              "A new era of education has begun &amp; it all starts with First Light Fun"
+            </p>  
           </div>
         </div>
       </div>
