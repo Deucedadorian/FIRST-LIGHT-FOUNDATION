@@ -1,12 +1,12 @@
 const MissionStatement = () => {
     return (
-      <main class="centered-bottom" id="main" role="main" tabindex="-1">
-        <div class="main section" id="page_body" name="Page Body">
-          <h3 class="post-title entry-title">
+      <main className="centered-bottom" id="main" role="main">
+        <div className="main section" id="page_body" name="Page Body">
+          <h3 className="post-title entry-title">
             Mission Statement
           </h3>
-          <div class="post-body-container">
-            <div class="post-body entry-content float-container">
+          <div className="post-body-container">
+            <div className="post-body entry-content float-container">
               <div>
                 <p>The First Light Foundation is here to reinforce the identity of each individual served. 
                   All across the globe, society is constantly evolving. Keeping up with modern trends can easily 
