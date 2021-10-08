@@ -4,7 +4,7 @@ const FoundationHeader = () => {
       <div className="centered-top">
         <div className="hamburger-menu-container">
           <svg className="svg-icon-24 touch-icon hamburger-menu">
-            <use href="/responsive/sprite_v1_6.css.svg#ic_menu_black_24dp" link="http://www.w3.org/1999/xlink"></use>
+            {/* hamburger menu */}
           </svg>
         </div>
         <div className="blog-name">

@@ -11,12 +11,7 @@ function App() {
   return (
     <div className="App">
       <FoundationHeader />
-      <About />
-      <MissionStatement />
-      <FunHeader />
       <Home />
-      <Aside />
-      <BookEvent />
     </div>
   );
 }
