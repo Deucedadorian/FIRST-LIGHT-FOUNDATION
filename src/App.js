@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       {foundationHeader ? <FoundationHeader /> : <FunHeader />}
-      {turtle ? <Turtle /> : <></>}
+      {turtle ? <Turtle /> : ""}
       <Home />
     </div>
   );
