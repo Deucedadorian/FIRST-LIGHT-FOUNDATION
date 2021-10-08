@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import FoundationHeader from './components/FoundationHeader';
 import FunHeader from './components/FunHeader';
@@ -8,9 +9,18 @@ import BookEvent from './components/BookEvent';
 import MissionStatement from './components/MissionStatement';
 
 function App() {
+  const [foundationHeader, setHeader] = useState(true);
+
+  const switchHeader = () => {
+    setHeader(!foundationHeader)
+  }
+
   return (
     <div className="App">
-      <FoundationHeader />
+      {foundationHeader ? <FoundationHeader /> : <FunHeader />
+
+      }
+      
       <Home />
     </div>
   );
