@@ -1,4 +1,11 @@
 const Aside = (props) => {
+
+  const handleClick = (page, showImage, foundationHeader) => {
+    props.handlePageChange(page);
+    props.setTurtle(showImage);
+    props.setHeader(foundationHeader)
+  }
+
   return (
     <aside className="sidebar-container container sidebar-invisible">
       <div className="navigation">
@@ -9,26 +16,18 @@ const Aside = (props) => {
           <div className="widget-content">
             <ul>
             <li>
-                <a href='/' onClick={
-                  (e) => {
-                    e.preventDefault();
-                    props.handlePageChange('home');
-                    props.setTurtle(true);
-                    props.setHeader(true);
-                  }
-                }>
+                <a href='/' onClick={(e) => {
+                  e.preventDefault();
+                  handleClick('home', true, true);
+                }}>
                   Home
                 </a>
               </li>
               <li>
-                <a href='/' onClick={
-                  (e) => {
+                <a href='/' onClick={(e) => {
                     e.preventDefault();
-                    props.handlePageChange('mission');
-                    props.setTurtle(false);
-                    props.setHeader(true);
-                  }
-                }>
+                    handleClick('mission', false, true);
+                  }}>
                   Mission Statement
                 </a>
               </li>
@@ -36,11 +35,8 @@ const Aside = (props) => {
                 <a href='/' onClick={
                   (e) => {
                     e.preventDefault();
-                    props.handlePageChange('about');
-                    props.setTurtle(false);
-                    props.setHeader(true);
-                  }
-                }>
+                    handleClick('about', false, true);
+                  }}>
                   Annawon Weeden
                 </a>
               </li>
@@ -48,11 +44,8 @@ const Aside = (props) => {
                 <a href='/' onClick={
                   (e) => {
                     e.preventDefault();
-                    props.handlePageChange('fun');
-                    props.setTurtle(true);
-                    props.setHeader(false);
-                  }
-                }>
+                    handleClick('fun', true, false);
+                  }}>
                   First Light Fun
                 </a>
               </li>
@@ -65,11 +58,8 @@ const Aside = (props) => {
                 <a href='/' onClick={
                   (e) => {
                     e.preventDefault();
-                    props.handlePageChange('book');
-                    props.setTurtle(false);
-                    props.setHeader(false);
-                  }
-                }>
+                    handleClick('book', false, false);
+                  }}>
                   Book Event
                 </a>
               </li>
@@ -77,11 +67,8 @@ const Aside = (props) => {
                 <a href='/' onClick={
                   (e) => {
                     e.preventDefault();
-                    props.handlePageChange('events');
-                    props.setTurtle(false);
-                    props.setHeader(true);
-                  }
-                }>
+                    handleClick('events', false, true);
+                  }}>
                   Public Events
                 </a>
               </li>
@@ -89,11 +76,8 @@ const Aside = (props) => {
                 <a href='/' onClick={
                   (e) => {
                     e.preventDefault();
-                    props.handlePageChange('educate');
-                    props.setTurtle(false);
-                    props.setHeader(false);
-                  }
-                }>
+                    handleClick('educate', false, false);
+                  }}>
                   Educational Resources
                 </a>
               </li>
@@ -101,11 +85,8 @@ const Aside = (props) => {
                 <a href='/' onClick={
                   (e) => {
                     e.preventDefault();
-                    props.handlePageChange('reviews');
-                    props.setTurtle(false);
-                    props.setHeader(true);
-                  }
-                }>
+                    handleClick('reviews', false, true);
+                  }}>
                   Reviews
                 </a>
               </li>
