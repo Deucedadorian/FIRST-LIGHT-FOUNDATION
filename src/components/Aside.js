@@ -9,49 +9,105 @@ const Aside = (props) => {
           <div className="widget-content">
             <ul>
             <li>
-                <button onClick={props.switchPage} name="home">
+                <a href='/' onClick={
+                  (e) => {
+                    e.preventDefault();
+                    props.handlePageChange('home');
+                    props.setTurtle(true);
+                    props.setHeader(true);
+                  }
+                }>
                   Home
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={props.switchPage} name="mission">
+                <a href='/' onClick={
+                  (e) => {
+                    e.preventDefault();
+                    props.handlePageChange('mission');
+                    props.setTurtle(false);
+                    props.setHeader(true);
+                  }
+                }>
                   Mission Statement
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={props.switchPage} name="about">
+                <a href='/' onClick={
+                  (e) => {
+                    e.preventDefault();
+                    props.handlePageChange('about');
+                    props.setTurtle(false);
+                    props.setHeader(true);
+                  }
+                }>
                   Annawon Weeden
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={props.switchPage} name="fun">
+                <a href='/' onClick={
+                  (e) => {
+                    e.preventDefault();
+                    props.handlePageChange('fun');
+                    props.setTurtle(true);
+                    props.setHeader(false);
+                  }
+                }>
                   First Light Fun
-                </button>
+                </a>
               </li>
               <li>
-                <button name="fashion">
-                  <a href="https://firstlightfashion.square.site/" target='_blank' rel='noreferrer'>First Light Fashion</a>
-                </button>
+                <a href="https://firstlightfashion.square.site/" target='_blank' rel='noreferrer'>
+                  First Light Fashion
+                </a>
               </li>
               <li>
-                <button onClick={props.switchPage} name="book">
+                <a href='/' onClick={
+                  (e) => {
+                    e.preventDefault();
+                    props.handlePageChange('book');
+                    props.setTurtle(false);
+                    props.setHeader(false);
+                  }
+                }>
                   Book Event
-                </button>
+                </a>
               </li>
               <li className="selected">
-                <button onClick={props.switchPage} name="events">
+                <a href='/' onClick={
+                  (e) => {
+                    e.preventDefault();
+                    props.handlePageChange('events');
+                    props.setTurtle(false);
+                    props.setHeader(true);
+                  }
+                }>
                   Public Events
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={props.switchPage} name="educate">
+                <a href='/' onClick={
+                  (e) => {
+                    e.preventDefault();
+                    props.handlePageChange('educate');
+                    props.setTurtle(false);
+                    props.setHeader(false);
+                  }
+                }>
                   Educational Resources
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={props.switchPage} name="reviews">
+                <a href='/' onClick={
+                  (e) => {
+                    e.preventDefault();
+                    props.handlePageChange('reviews');
+                    props.setTurtle(false);
+                    props.setHeader(true);
+                  }
+                }>
                   Reviews
-                </button>
+                </a>
               </li>
             </ul> 
           </div>
