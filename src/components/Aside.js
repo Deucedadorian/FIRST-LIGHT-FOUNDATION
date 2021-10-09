@@ -1,49 +1,59 @@
-const Aside = () => {
+const Aside = (props) => {
   return (
     <aside className="sidebar-container container sidebar-invisible">
       <div className="navigation">
-        <svg className="svg-icon-24 touch-icon sidebar-back rtl-reversible-icon">
-          <use
-            href="/responsive/sprite_v1_6.css.svg#ic_arrow_back_black_24dp"
-            link="http://www.w3.org/1999/xlink"
-          ></use>
-        </svg>
+        {/* little back arrow icon */}
       </div>
       <div className="section" id="sidebar" name="Sidebar">
         <div className="widget PageList" data-version="2" id="PageList2">
           <div className="widget-content">
             <ul>
-              <li>
-                <a href="http://www.firstlightfoundation.net/p/mission-statement.html">
-                  Mission Statement{" "}
-                </a>
+            <li>
+                <button onClick={props.switchPage} name="home">
+                  Home
+                </button>
               </li>
               <li>
-                <a href="http://www.firstlightfoundation.net/p/annawon-weeden-bio-page.html">
+                <button onClick={props.switchPage} name="mission">
+                  Mission Statement
+                </button>
+              </li>
+              <li>
+                <button onClick={props.switchPage} name="about">
                   Annawon Weeden
-                </a>
+                </button>
               </li>
               <li>
-                <a href="https://firstlightfun.blogspot.com">
-                  First Light Fun{" "}
-                </a>
+                <button onClick={props.switchPage} name="fun">
+                  First Light Fun
+                </button>
               </li>
               <li>
-                <a href="https://squareup.com/store/annawon-weeden/">
-                  First Light Fashion
-                </a>
+                <button name="fashion">
+                  <a href="https://firstlightfashion.square.site/" target='_blank' rel='noreferrer'>First Light Fashion</a>
+                </button>
+              </li>
+              <li>
+                <button onClick={props.switchPage} name="book">
+                  Book Event
+                </button>
               </li>
               <li className="selected">
-                <a href="http://www.firstlightfoundation.net/p/public-events.html">
-                  Public Events{" "}
-                </a>
+                <button onClick={props.switchPage} name="events">
+                  Public Events
+                </button>
               </li>
               <li>
-                <a href="http://www.firstlightfoundation.net/p/reviews-and-testimonials.html">
-                  Reviews
-                </a>
+                <button onClick={props.switchPage} name="educate">
+                  Educational Resources
+                </button>
               </li>
-            </ul>
+              <li>
+                <button onClick={props.switchPage} name="reviews">
+                  Reviews
+                </button>
+              </li>
+            </ul> 
           </div>
         </div>
       </div>
