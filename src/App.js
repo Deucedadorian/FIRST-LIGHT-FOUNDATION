@@ -18,10 +18,6 @@ function App() {
   const [turtle, setTurtle] = useState(true);
   const [page, setPage] = useState(<Home />);
 
-  // const switchHeader = () => {
-  //   setHeader(!foundationHeader)
-  // }
-
   function switchPage(event) {
     if (event.target.name === 'home') setPage(< Home/>)
     else if(event.target.name === 'mission') setPage(<MissionStatement />)
