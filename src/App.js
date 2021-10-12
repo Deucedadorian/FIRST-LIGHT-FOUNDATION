@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import FoundationHeader from './components/FoundationHeader';
-import FunHeader from './components/FunHeader';
+import Header from './components/Header';
 import Turtle from './components/Turtle';
 import Aside from './components/Aside';
 import Home from './components/Home';
@@ -17,7 +16,7 @@ function App() {
   const [foundationHeader, setHeader] = useState(true);
   const [turtle, setTurtle] = useState(true);
   const [page, setPage] = useState('home');
-  const [showAside, setShowAside] = useState(false);
+  const [showAside, setShowAside] = useState(true);
 
   const renderPage = () => {
     console.log(page);
@@ -37,7 +36,7 @@ function App() {
 
   return (
     <div className="App">
-      {foundationHeader ? <FoundationHeader /> : <FunHeader />}
+      <Header foundationHeader={foundationHeader} setHeader={setHeader} />
       <Aside handlePageChange={handlePageChange}
           setHeader={setHeader} 
           foundationHeader={foundationHeader} 
