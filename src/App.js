@@ -17,6 +17,7 @@ function App() {
   const [foundationHeader, setHeader] = useState(true);
   const [turtle, setTurtle] = useState(true);
   const [page, setPage] = useState('home');
+  const [showAside, setShowAside] = useState(false);
 
   const renderPage = () => {
     console.log(page);
@@ -37,8 +38,13 @@ function App() {
   return (
     <div className="App">
       {foundationHeader ? <FoundationHeader /> : <FunHeader />}
-      <Aside handlePageChange={handlePageChange} setHeader={setHeader} foundationHeader={foundationHeader} setTurtle={setTurtle} />
-      {turtle ? <Turtle /> : ""}
+      <Aside handlePageChange={handlePageChange}
+          setHeader={setHeader} 
+          foundationHeader={foundationHeader} 
+          setTurtle={setTurtle}
+          setShowAside={setShowAside}
+          showAside={showAside}/> 
+      <Turtle className={turtle ?  "visible" : "hidden"} />
       {renderPage()}
     </div>
   );

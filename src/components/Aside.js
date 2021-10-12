@@ -7,7 +7,14 @@ const Aside = (props) => {
   }
 
   return (
-    <aside className="sidebar-container container sidebar-invisible">
+    <aside className={
+      props.showAside ? 
+      (
+        "sidebar-container container" 
+      ) : ( 
+          "hidden" 
+      )
+    }>
       <div className="navigation">
         {/* little back arrow icon */}
       </div>
