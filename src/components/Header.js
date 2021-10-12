@@ -3,9 +3,9 @@ const Header = (props) => {
     <header className="centered-top-container" role="banner">
       <div className="centered-top">
         <div className="hamburger-menu-container">
-          <svg className="svg-icon-24 touch-icon hamburger-menu">
-            {/* hamburger Button */}
-          </svg>
+          {/* <svg className="svg-icon-24 touch-icon hamburger-menu"> */}
+            <button onClick={props.toggleAside}>hamburger</button>
+          {/* </svg> */}
         </div>
         <div className="blog-name">
           <div className="section" id="header" name="Header"> {

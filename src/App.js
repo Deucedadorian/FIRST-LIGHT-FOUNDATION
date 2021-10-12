@@ -34,15 +34,26 @@ function App() {
     setPage(page);
   }
 
+  const toggleAside = () => {
+    setShowAside(!showAside);
+  }
+
   return (
     <div className="App">
-      <Header foundationHeader={foundationHeader} setHeader={setHeader} />
+      <Header 
+        foundationHeader={foundationHeader}
+        setHeader={setHeader} 
+        // showAside={showAside}
+        // setShowAside={setShowAside}
+        toggleAside={toggleAside}
+      />
       <Aside handlePageChange={handlePageChange}
-          setHeader={setHeader} 
-          foundationHeader={foundationHeader} 
-          setTurtle={setTurtle}
-          setShowAside={setShowAside}
-          showAside={showAside}/> 
+        setHeader={setHeader} 
+        foundationHeader={foundationHeader} 
+        setTurtle={setTurtle}
+        setShowAside={setShowAside}
+        showAside={showAside}
+      /> 
       <Turtle className={turtle ?  "visible" : "hidden"} />
       {renderPage()}
     </div>
