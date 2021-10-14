@@ -16,7 +16,7 @@ function App() {
   const [foundationHeader, setHeader] = useState(true);
   const [turtle, setTurtle] = useState(true);
   const [page, setPage] = useState('home');
-  const [showAside, setShowAside] = useState(true);
+  const [showAside, setShowAside] = useState(false);
 
   const renderPage = () => {
     console.log(page);
@@ -61,3 +61,4 @@ function App() {
 }
 
 export default App;
+
