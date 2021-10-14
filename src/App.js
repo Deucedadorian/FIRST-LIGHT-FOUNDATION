@@ -46,6 +46,7 @@ function App() {
         // showAside={showAside}
         // setShowAside={setShowAside}
         toggleAside={toggleAside}
+        showAside={showAside}
       />
       <Aside handlePageChange={handlePageChange}
         setHeader={setHeader} 

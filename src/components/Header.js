@@ -1,11 +1,11 @@
+import Hamburger from 'hamburger-react'
+
 const Header = (props) => {
   return (
     <header className="centered-top-container" role="banner">
       <div className="centered-top">
         <div className="hamburger-menu-container">
-          {/* <svg className="svg-icon-24 touch-icon hamburger-menu"> */}
-            <button onClick={props.toggleAside}>hamburger</button>
-          {/* </svg> */}
+          <Hamburger toggled={props.showAside} toggle={props.toggleAside} />
         </div>
         <div className="blog-name">
           <div className="section" id="header" name="Header"> {
