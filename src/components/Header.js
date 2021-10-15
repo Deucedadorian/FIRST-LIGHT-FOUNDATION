@@ -1,12 +1,17 @@
-import Hamburger from 'hamburger-react'
+// import Hamburger from 'hamburger-react'
 
 const Header = (props) => {
   return (
     <header className="centered-top-container" role="banner">
       <div className="centered-top">
-        <div className="hamburger-menu-container">
-          <Hamburger toggled={props.showAside} toggle={props.toggleAside} />
-        </div>
+        {/* <div className={props.showAside ? 
+              (
+                "hidden"
+              ) : ( 
+                  "hamburger-menu-container"
+              )}>
+          <Hamburger toggled={props.showAside} toggle={props.toggleAside}/>
+        </div> */}
         <div className="blog-name">
           <div className="section" id="header" name="Header"> {
             props.foundationHeader ? (

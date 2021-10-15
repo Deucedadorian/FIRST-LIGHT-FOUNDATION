@@ -3,6 +3,7 @@
 }
 
 .App {
+  display: flex;
   text-align: center;
 }
 
@@ -43,6 +44,10 @@
 
 .visible {
   display: block;
+}
+
+aside {
+  z-index: 2;
 }
 
 @keyframes App-logo-spin {

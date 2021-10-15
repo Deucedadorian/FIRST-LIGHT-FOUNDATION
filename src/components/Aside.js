@@ -1,3 +1,5 @@
+import Hamburger from 'hamburger-react'
+
 const Aside = (props) => {
 
   const handleClick = (page, showImage, foundationHeader) => {
@@ -7,18 +9,17 @@ const Aside = (props) => {
   }
 
   return (
-    <aside className={
-      props.showAside ? 
+    <aside className="sidebar-container container">
+      <div className="navigation">
+        <Hamburger toggled={props.showAside} toggle={props.toggleAside} />
+      </div>
+      <div className={props.showAside ? 
       (
-        "sidebar-container container" 
+         ""
       ) : ( 
           "hidden" 
       )
-    }>
-      <div className="navigation">
-        {/* little back arrow icon */}
-      </div>
-      <div className="section" id="sidebar" name="Sidebar">
+    } id="sidebar" name="Sidebar">
         <div className="widget PageList" data-version="2" id="PageList2">
           <div className="widget-content">
             <ul>

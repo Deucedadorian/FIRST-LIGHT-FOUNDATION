@@ -40,23 +40,25 @@ function App() {
 
   return (
     <div className="App">
-      <Header 
-        foundationHeader={foundationHeader}
-        setHeader={setHeader} 
-        // showAside={showAside}
-        // setShowAside={setShowAside}
-        toggleAside={toggleAside}
-        showAside={showAside}
-      />
       <Aside handlePageChange={handlePageChange}
         setHeader={setHeader} 
         foundationHeader={foundationHeader} 
         setTurtle={setTurtle}
-        setShowAside={setShowAside}
+        toggleAside={toggleAside}
         showAside={showAside}
-      /> 
-      <Turtle className={turtle ?  "visible" : "hidden"} />
-      {renderPage()}
+      />
+      <div>
+        <Header 
+          foundationHeader={foundationHeader}
+          setHeader={setHeader} 
+          // showAside={showAside}
+          // setShowAside={setShowAside}
+          toggleAside={toggleAside}
+          showAside={showAside}
+        />
+        <Turtle className={turtle ?  "visible" : "hidden"} />
+        {renderPage()}
+      </div>
     </div>
   );
 }
