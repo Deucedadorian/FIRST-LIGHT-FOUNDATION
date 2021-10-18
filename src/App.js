@@ -46,8 +46,9 @@ function App() {
         setTurtle={setTurtle}
         toggleAside={toggleAside}
         showAside={showAside}
+        className="aside"
       />
-      <div>
+      <div className="main">
         <Header 
           foundationHeader={foundationHeader}
           setHeader={setHeader} 
@@ -55,6 +56,7 @@ function App() {
           // setShowAside={setShowAside}
           toggleAside={toggleAside}
           showAside={showAside}
+          className='header'
         />
         <Turtle className={turtle ?  "visible" : "hidden"} />
         {renderPage()}

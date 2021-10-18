@@ -47,7 +47,19 @@
 }
 
 aside {
-  z-index: 2;
+  position: absolute;
+  z-index: 0;
+  /* opacity: 40%; */
+}
+
+.main {
+ 
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  text-align: center;
 }
 
 @keyframes App-logo-spin {
