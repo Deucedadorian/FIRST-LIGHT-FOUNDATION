@@ -39,7 +39,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App centered-bottom">
       <Aside handlePageChange={handlePageChange}
         setHeader={setHeader} 
         foundationHeader={foundationHeader} 

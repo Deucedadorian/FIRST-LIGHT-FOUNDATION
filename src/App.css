@@ -3,7 +3,6 @@
 }
 
 .App {
-  display: flex;
   text-align: center;
 }
 
@@ -48,18 +47,8 @@
 
 aside {
   position: absolute;
-  z-index: 0;
-  /* opacity: 40%; */
-}
-
-.main {
- 
-  display: flex;
-  flex-direction: column;
-}
-
-.header {
-  text-align: center;
+  /* z-index: 0;
+  opacity: 40%; */
 }
 
 @keyframes App-logo-spin {
