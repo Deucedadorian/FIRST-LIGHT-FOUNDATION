@@ -58,7 +58,7 @@ function App() {
           showAside={showAside}
           className='header'
         />
-        <Turtle className={turtle ?  "visible" : "hidden"} />
+        <Turtle turtle={turtle}/>
         {renderPage()}
       </div>
     </div>
