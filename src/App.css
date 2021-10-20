@@ -42,7 +42,7 @@
 }
 
 .visible {
-  display: block;
+  display: inline;
 }
 
 aside {

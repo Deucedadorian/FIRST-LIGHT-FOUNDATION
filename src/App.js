@@ -19,7 +19,6 @@ function App() {
   const [showAside, setShowAside] = useState(false);
 
   const renderPage = () => {
-    console.log(page);
     if (page === 'home') return < Home/>;
     if(page === 'mission') return <MissionStatement />;
     if(page === 'about') return <About />;
@@ -52,8 +51,6 @@ function App() {
         <Header 
           foundationHeader={foundationHeader}
           setHeader={setHeader} 
-          // showAside={showAside}
-          // setShowAside={setShowAside}
           toggleAside={toggleAside}
           showAside={showAside}
           className='header'

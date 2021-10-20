@@ -6,7 +6,6 @@ const Aside = (props) => {
     props.handlePageChange(page);
     props.setTurtle(showImage);
     props.setHeader(foundationHeader);
-    console.log(showImage);
   }
 
   return (
