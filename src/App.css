@@ -45,10 +45,8 @@
   display: inline;
 }
 
-aside {
+.aside {
   position: absolute;
-  /* z-index: 0;
-  opacity: 40%; */
 }
 
 @keyframes App-logo-spin {

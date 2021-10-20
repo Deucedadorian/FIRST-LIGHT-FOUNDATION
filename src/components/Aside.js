@@ -9,7 +9,7 @@ const Aside = (props) => {
   }
 
   return (
-    <aside className="sidebar-container container">
+    <aside className="sidebar-container container aside">
       <div className="navigation">
         <Hamburger toggled={props.showAside} toggle={props.toggleAside} />
       </div>
@@ -20,7 +20,7 @@ const Aside = (props) => {
           "hidden" 
       )
     } id="sidebar" name="Sidebar">
-        <div className="widget-content">
+        <nav className="widget-content">
           <ul>
             <li>
               <a href='/' onClick={(e) => {
@@ -98,7 +98,7 @@ const Aside = (props) => {
               </a>
             </li>
           </ul> 
-        </div>
+        </nav>
       </div>
     </aside>
   );
