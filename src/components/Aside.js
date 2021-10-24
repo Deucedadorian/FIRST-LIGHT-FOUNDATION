@@ -15,7 +15,7 @@ const Aside = (props) => {
       </div>
       <div className={props.showAside ? 
       (
-         ""
+         "show-aside"
       ) : ( 
           "hidden" 
       )

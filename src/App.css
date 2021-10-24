@@ -69,6 +69,10 @@
 
 .aside {
   position: absolute;
+  
+}
+
+.show-aside {
   height: 100%;
   background-color:rgb(65, 20, 20);
 }
@@ -81,6 +85,10 @@
 aside ul li a {
   text-decoration: none;
   color: bisque;
+}
+
+.turtle-image {
+  width: 100%;
 }
 
 @keyframes App-logo-spin {
