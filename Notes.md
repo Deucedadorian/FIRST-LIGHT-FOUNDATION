@@ -21,3 +21,13 @@ It should have a portal that takes users to first light fashion.
 ### 10-07-2021
 
 - need to add posts from first light fun to data base and make it possible for Annawon to add more posts to data base
+
+### 10-24-2021
+
+#### Todo:
+
+https://www.freecodecamp.org/news/react-router-tutorial/
+
+https://www.youtube.com/watch?v=6BozpmSjk-Y
+
+for creating routing for views...
