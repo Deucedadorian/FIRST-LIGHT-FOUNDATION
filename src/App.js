@@ -48,13 +48,7 @@ function App() {
         className="aside"
       />
       <div className="main">
-        <Header 
-          foundationHeader={foundationHeader}
-          setHeader={setHeader} 
-          toggleAside={toggleAside}
-          showAside={showAside}
-          className='header'
-        />
+        <Header foundationHeader={foundationHeader} className='header' />
         <Turtle turtle={turtle}/>
         {renderPage()}
       </div>
