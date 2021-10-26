@@ -2,15 +2,15 @@ import { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Turtle from './components/Turtle';
-import Aside from './components/Aside';
+import Aside from './components/Navbar';
 import Home from './components/Home';
 import MissionStatement from './components/MissionStatement';
 import About from './components/About';
 import FirstLightFun from './components/FirstLightFun';
 import BookEvent from './components/BookEvent';
-import PublicEvents from './components/PublicEvents';
+import PublicEvents from './pages/PublicEvents';
 import EducationalResources from './components/EducationResources';
-import Reviews from './components/Reviews';
+import Reviews from './pages/Reviews';
 
 function App() {
   const [foundationHeader, setHeader] = useState(true);
