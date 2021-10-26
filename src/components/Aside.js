@@ -1,6 +1,9 @@
-import Hamburger from 'hamburger-react'
+import Hamburger from 'hamburger-react';
+// import { NavLink } from 'react-router-dom';
+// import React, { useState } from "react";
 
-const Aside = (props) => {
+const Navbar = (props) => {
+  // const [isOpen, setOpen] = useState(false);
 
   const handleClick = (page, showImage, foundationHeader) => {
     props.handlePageChange(page);
@@ -9,7 +12,29 @@ const Aside = (props) => {
   }
 
   return (
-    <aside className="sidebar-container container aside">
+    // <nav 
+    //   className="navbar is-primnary"
+    //   role="navigation"
+    //   aria-label="main navigation"
+    // >
+    //   <div className="container">
+    //     <div className="navbar-brand">
+    //       <a
+    //         role="button"
+    //         className={`navbar-burger burger ${isOpen && "is-active"}`}
+    //         aria-label="menu"
+    //         aria-expanded="false"
+    //         onClick={() => setOpen(!isOpen)}
+    //         href
+    //       >
+    //         <span aria-hidden="true"></span>
+    //         <span aria-hidden="true"></span>
+    //         <span aria-hidden="true"></span>
+    //       </a>
+    //     </div>
+    //   </div>
+
+    <aside>
       <div className="navigation">
         <Hamburger toggled={props.showAside} toggle={props.toggleAside} />
       </div>
@@ -98,10 +123,10 @@ const Aside = (props) => {
               </a>
             </li>
           </ul> 
-        </nav>
+        </nav> 
       </div>
     </aside>
   );
 };
 
-export default Aside;
+export default Navbar;
