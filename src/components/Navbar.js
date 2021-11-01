@@ -32,6 +32,62 @@ const Navbar = (props) => {
             <span aria-hidden="true"></span>
           </a>
         </div>
+        <NavLink
+          className="navbar-item"
+          activeClassName="is-active"
+          to="/"
+          exact
+        >
+          Home
+        </NavLink>
+
+        <NavLink
+          className="navbar-item"
+          activeClassName="is-active"
+          to="/about"
+        >
+          About
+        </NavLink>
+        
+        <NavLink
+          className="navbar-item"
+          activeClassName="is-active"
+          to="/mission-statement"
+        >
+          Mission Statement
+        </NavLink>
+
+        <NavLink
+          className="navbar-item"
+          activeClassName="is-active"
+          to="/book-event"
+        >
+          Book Event
+        </NavLink>
+
+        <NavLink
+          className="navbar-item"
+          activeClassName="is-active"
+          to="/public-events"
+        >
+          Public Events
+        </NavLink>
+
+        <NavLink
+          className="navbar-item"
+          activeClassName="is-active"
+          to="/educations-resources"
+        >
+          Educational Resources
+        </NavLink>
+
+        <NavLink
+          className="navbar-item"
+          activeClassName="is-active"
+          to="/reviews"
+        >
+          Reviews
+        </NavLink>
       </div>
     </nav>
   );

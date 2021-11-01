@@ -2,14 +2,14 @@ import { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Turtle from './components/Turtle';
-import Aside from './components/Navbar';
-import Home from './components/Home';
-import MissionStatement from './components/MissionStatement';
-import About from './components/About';
-import FirstLightFun from './components/FirstLightFun';
-import BookEvent from './components/BookEvent';
+import Aside from './components/Aside';
+import Home from './pages/Home';
+import MissionStatement from './pages/MissionStatement';
+import About from './pages/About';
+import FirstLightFun from './pages/FirstLightFun';
+import BookEvent from './pages/BookEvent';
 import PublicEvents from './pages/PublicEvents';
-import EducationalResources from './components/EducationResources';
+import EducationalResources from './pages/EducationResources';
 import Reviews from './pages/Reviews';
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
   const [showAside, setShowAside] = useState(false);
 
   const renderPage = () => {
+    console.log(page);
     if (page === 'home') return < Home/>;
     if(page === 'mission') return <MissionStatement />;
     if(page === 'about') return <About />;
@@ -38,23 +39,25 @@ function App() {
   }
 
   return (
-    <div className="App centered-bottom">
+    <div className="App">
+      <Header 
+        foundationHeader={foundationHeader}
+        setHeader={setHeader} 
+        // showAside={showAside}
+        // setShowAside={setShowAside}
+        toggleAside={toggleAside}
+      />
       <Aside handlePageChange={handlePageChange}
         setHeader={setHeader} 
         foundationHeader={foundationHeader} 
         setTurtle={setTurtle}
-        toggleAside={toggleAside}
+        setShowAside={setShowAside}
         showAside={showAside}
-        className="aside"
-      />
-      <div className="main">
-        <Header foundationHeader={foundationHeader} className='header' />
-        <Turtle turtle={turtle}/>
-        {renderPage()}
-      </div>
+      /> 
+      <Turtle className={turtle ?  "visible" : "hidden"} />
+      {renderPage()}
     </div>
   );
 }
 
 export default App;
-
