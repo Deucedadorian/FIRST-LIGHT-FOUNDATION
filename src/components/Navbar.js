@@ -76,18 +76,18 @@ const Navbar = (props) => {
         <NavLink
           className="navbar-item"
           activeClassName="is-active"
-          to="/educations-resources"
+          to="/educational-resources"
         >
           Educational Resources
         </NavLink>
 
-        <NavLink
+        {/* <NavLink
           className="navbar-item"
           activeClassName="is-active"
           to="/reviews"
         >
           Reviews
-        </NavLink>
+        </NavLink> */}
       </div>
     </nav>
   );

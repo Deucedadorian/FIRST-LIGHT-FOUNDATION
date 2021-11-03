@@ -6,7 +6,7 @@ import './App.css';
 
 import Header from './components/Header';
 // import Turtle from './components/Turtle';
-import Aside from './components/Aside';
+// import Aside from './components/Aside';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -81,12 +81,12 @@ function App() {
             <Route path='/educational-resources'>
               <EducationalResources />
             </Route>
-            <Route path='reviews'>
+            {/* <Route path='reviews'>
               <Reviews />
-            </Route>
-            <Route path='first-light-fun'>
+            </Route> */}
+            {/* <Route path='first-light-fun'>
               <FirstLightFun />
-            </Route>
+            </Route> */}
           </Switch>
         </div>
       {/* <Turtle className={turtle ?  "visible" : "hidden"} />
