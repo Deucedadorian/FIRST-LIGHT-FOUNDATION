@@ -14,8 +14,8 @@ import MissionStatement from './pages/MissionStatement';
 import BookEvent from './pages/BookEvent';
 import PublicEvents from './pages/PublicEvents';
 import EducationalResources from './pages/EducationResources';
-import Reviews from './pages/Reviews';
-import FirstLightFun from './pages/FirstLightFun';
+// import Reviews from './pages/Reviews';
+// import FirstLightFun from './pages/FirstLightFun';
 
 function App() {
   const [foundationHeader, setHeader] = useState(true);

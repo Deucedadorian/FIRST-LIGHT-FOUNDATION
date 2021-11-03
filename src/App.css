@@ -6,6 +6,7 @@
 
 .App {
   text-align: center;
+  display: flex;
 }
 
 .App-logo {
@@ -91,21 +92,21 @@ aside ul li a {
 
 /* ---> NavBar styles <--- */
 
-nav .navbar .is-primary{
+/* nav {
   position: absolute;
   
-}
+} */
 
 .show-navbar {
   height: 100%;
   background-color:rgb(65, 20, 20);
 }
 
-.navbar .navbar-brand {
+.navbar-item-container {
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  padding: 40px;
+  /* padding: 40px; */
 }
 
 .navbar-item {

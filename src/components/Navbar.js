@@ -17,7 +17,7 @@ const Navbar = (props) => {
       role="navigation"
       aria-label="main navigation"
     >
-      <div className="container">
+      <div className="navbar-item-container">
         <div className="navbar-brand">
           <a
             role="button"
