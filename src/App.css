@@ -67,7 +67,9 @@
   display: inline;
 }
 
-.aside {
+/* ---> aside styles <--- */
+
+/* .aside {
   position: absolute;
   
 }
@@ -85,7 +87,34 @@
 aside ul li a {
   text-decoration: none;
   color: bisque;
+} */
+
+/* ---> NavBar styles <--- */
+
+nav .navbar .is-primary{
+  position: absolute;
+  
 }
+
+.show-navbar {
+  height: 100%;
+  background-color:rgb(65, 20, 20);
+}
+
+.navbar .navbar-brand {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 40px;
+}
+
+.navbar-item {
+  text-decoration: none;
+  color: bisque;
+
+}
+
+/* > END navbar styles < */
 
 .turtle-image {
   width: 100%;
