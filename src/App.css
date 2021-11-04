@@ -6,7 +6,6 @@
 
 .App {
   text-align: center;
-  display: flex;
 }
 
 .App-logo {
@@ -92,10 +91,10 @@ aside ul li a {
 
 /* ---> NavBar styles <--- */
 
-/* nav {
-  position: absolute;
-  
-} */
+nav {
+  position:absolute;
+  top: 0;
+}
 
 .show-navbar {
   height: 100%;
@@ -106,6 +105,9 @@ aside ul li a {
   display: flex;
   flex-direction: column;
   list-style-type: none;
+  text-align: left;
+  margin-left: 10px;
+  padding-top: 20px;
   /* padding: 40px; */
 }
 
