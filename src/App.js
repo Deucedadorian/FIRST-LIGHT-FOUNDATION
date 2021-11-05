@@ -2,6 +2,10 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { BrowserRouter } from 'react-router-dom';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from 'react-bootstrap/Container';
+
+
 import './App.css';
 
 import Header from './components/Header';
@@ -18,6 +22,7 @@ import EducationalResources from './pages/EducationResources';
 // import FirstLightFun from './pages/FirstLightFun';
 
 import Hamburger from 'hamburger-react';
+import { Col, Row } from 'react-bootstrap';
 
 function App() {
   const [foundationHeader, setHeader] = useState(true);
@@ -47,16 +52,22 @@ function App() {
 
   return (
     <div className="App">
-      <div className="flex">
-        <Header 
-          foundationHeader={foundationHeader}
-          setHeader={setHeader} 
-          // showAside={showAside}
-          // setShowAside={setShowAside}
-          toggleAside={toggleAside}
-        />
-        <Hamburger />
-      </div>
+      <Container>
+        <Row>
+          <Col xs={1} >
+            <Hamburger />
+          </Col>
+          <Col xs={17} md={8}>
+            <Header 
+              foundationHeader={foundationHeader}
+              setHeader={setHeader} 
+              // showAside={showAside}
+              // setShowAside={setShowAside}
+              toggleAside={toggleAside}
+            />
+          </Col>
+        </Row>
+      </Container>
       {/* <Aside handlePageChange={handlePageChange}
         setHeader={setHeader} 
         foundationHeader={foundationHeader} 

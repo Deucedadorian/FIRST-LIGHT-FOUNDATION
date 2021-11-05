@@ -58,14 +58,11 @@ h1 {
   margin: 0;
 }
 
-.hamburger-react {
-  position: fixed;
-  left: 0px;
-  top: 10px;
-  /* right: 100px; */
-  /* top: 100px; */
-  /* margin-right: 100px; */
-}
+/* .hamburger-react {
+  position: absolute;
+  left: 10px;
+  top: 45px;
+} */
 
 /* > framework styling < */
 
@@ -82,11 +79,11 @@ h1 {
   display: inline;
 }
 
-.flex {
+/* .flex {
   display:flex;
   justify-content: space-between;
   flex-direction: row-reverse;
-}
+} */
 
 /* header {
   margin: 15px;
