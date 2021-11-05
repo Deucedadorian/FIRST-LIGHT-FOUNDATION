@@ -17,6 +17,8 @@ import EducationalResources from './pages/EducationResources';
 // import Reviews from './pages/Reviews';
 // import FirstLightFun from './pages/FirstLightFun';
 
+import Hamburger from 'hamburger-react';
+
 function App() {
   const [foundationHeader, setHeader] = useState(true);
   // const [turtle, setTurtle] = useState(true);
@@ -45,13 +47,16 @@ function App() {
 
   return (
     <div className="App">
-      <Header 
-        foundationHeader={foundationHeader}
-        setHeader={setHeader} 
-        // showAside={showAside}
-        // setShowAside={setShowAside}
-        toggleAside={toggleAside}
-      />
+      <div className="flex">
+        <Header 
+          foundationHeader={foundationHeader}
+          setHeader={setHeader} 
+          // showAside={showAside}
+          // setShowAside={setShowAside}
+          toggleAside={toggleAside}
+        />
+        <Hamburger />
+      </div>
       {/* <Aside handlePageChange={handlePageChange}
         setHeader={setHeader} 
         foundationHeader={foundationHeader} 
