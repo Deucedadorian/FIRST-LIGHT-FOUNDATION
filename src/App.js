@@ -2,14 +2,14 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { BrowserRouter } from 'react-router-dom';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from 'react-bootstrap/Container';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import Container from 'react-bootstrap/Container';
 
 
 import './App.css';
 
 import Header from './components/Header';
-// import Turtle from './components/Turtle';
+import Turtle from './components/Turtle';
 // import Aside from './components/Aside';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
@@ -22,13 +22,14 @@ import EducationalResources from './pages/EducationResources';
 // import FirstLightFun from './pages/FirstLightFun';
 
 import Hamburger from 'hamburger-react';
-import { Col, Row } from 'react-bootstrap';
+// import { Col, Row } from 'react-bootstrap';
 
 function App() {
   const [foundationHeader, setHeader] = useState(true);
-  // const [turtle, setTurtle] = useState(true);
+  const [turtle, setTurtle] = useState(true);
   // const [page, setPage] = useState('home');
-  const [showAside, setShowAside] = useState(false);
+  // const [showAside, setShowAside] = useState(false);
+  const [isOpen, setOpen] = useState(false);
 
   // const renderPage = () => {
   //   console.log(page);
@@ -46,37 +47,36 @@ function App() {
   //   setPage(page);
   // }
 
-  const toggleAside = () => {
-    setShowAside(!showAside);
-  }
+  // const toggleAside = () => {
+  //   setShowAside(!showAside);
+  // }
 
   return (
     <div className="App">
-      <Container>
-        <Row>
-          <Col xs={1} >
+                <a
+            role="button"
+            className={`navbar-burger burger ${isOpen && "is-active"}`}
+            aria-label="menu"
+            aria-expanded="false"
+            onClick={() => setOpen(!isOpen)}
+            href
+          >
             <Hamburger />
-          </Col>
-          <Col xs={17} md={8}>
-            <Header 
-              foundationHeader={foundationHeader}
-              setHeader={setHeader} 
-              // showAside={showAside}
-              // setShowAside={setShowAside}
-              toggleAside={toggleAside}
-            />
-          </Col>
-        </Row>
-      </Container>
-      {/* <Aside handlePageChange={handlePageChange}
-        setHeader={setHeader} 
-        foundationHeader={foundationHeader} 
-        setTurtle={setTurtle}
-        setShowAside={setShowAside}
-        showAside={showAside}
-      />  */}
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <h3 value={isOpen}></h3>
+          </a>
+      
       <BrowserRouter>
-        <Navbar />
+        <Navbar isOpen={isOpen} />
+        <Header 
+        foundationHeader={foundationHeader}
+        setHeader={setHeader} 
+        // showAside={showAside}
+        // setShowAside={setShowAside}
+        // toggleAside={toggleAside}
+      />
         <div className="container mt-2" style={{ marginTop: 40 }}>
           <Switch>
             <Route exact path='/'>
@@ -105,9 +105,16 @@ function App() {
             </Route> */}
           </Switch>
         </div>
-      {/* <Turtle className={turtle ?  "visible" : "hidden"} />
-      {renderPage()} */}
       </BrowserRouter>
+      {/* <Aside handlePageChange={handlePageChange}
+        setHeader={setHeader} 
+        foundationHeader={foundationHeader} 
+        setTurtle={setTurtle}
+        setShowAside={setShowAside}
+        showAside={showAside}
+      />  */}
+      {/* {renderPage()} */}
+      <Turtle className={turtle ?  "visible" : "hidden"} />
     </div>
   );
 }
