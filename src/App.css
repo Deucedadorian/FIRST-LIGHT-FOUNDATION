@@ -58,11 +58,12 @@ h1 {
   margin: 0;
 }
 
-/* .hamburger-react {
-  position: absolute;
+.hamburger-react {
+  /* position: absolute;
   left: 10px;
-  top: 45px;
-} */
+  top: 45px; */
+  color: #ffffff;
+}
 
 /* > framework styling < */
 

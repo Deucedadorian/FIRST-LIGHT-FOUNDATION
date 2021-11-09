@@ -53,7 +53,7 @@ function App() {
 
   return (
     <div className="App">
-                <a
+          <a
             role="button"
             className={`navbar-burger burger ${isOpen && "is-active"}`}
             aria-label="menu"
@@ -62,10 +62,6 @@ function App() {
             href
           >
             <Hamburger />
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <h3 value={isOpen}></h3>
           </a>
       
       <BrowserRouter>
