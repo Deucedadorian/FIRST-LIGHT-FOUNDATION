@@ -1,6 +1,7 @@
 // import Hamburger from 'hamburger-react';
 import { NavLink } from 'react-router-dom';
-import React, { useState } from "react";
+// import React, { useState } from "react";
+import React from "react";
 
 const Navbar = (props) => {
 

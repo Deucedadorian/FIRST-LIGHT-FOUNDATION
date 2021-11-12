@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Switch, Route, } from "react-router-dom";
 import { BrowserRouter } from 'react-router-dom';
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
@@ -16,7 +16,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import MissionStatement from './pages/MissionStatement';
 import BookEvent from './pages/BookEvent';
-import PublicEvents from './pages/PublicEvents';
+// import PublicEvents from './pages/PublicEvents';
 import EducationalResources from './pages/EducationResources';
 // import Reviews from './pages/Reviews';
 // import FirstLightFun from './pages/FirstLightFun';
@@ -26,7 +26,7 @@ import Hamburger from 'hamburger-react';
 
 function App() {
   const [foundationHeader, setHeader] = useState(true);
-  const [turtle, setTurtle] = useState(true);
+  // const [turtle, setTurtle] = useState(true);
   // const [page, setPage] = useState('home');
   // const [showAside, setShowAside] = useState(false);
   const [isOpen, setOpen] = useState(false);
