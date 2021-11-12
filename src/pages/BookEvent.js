@@ -1,3 +1,5 @@
+import bookingPoster from "../assets/images/Bookings.png";
+
 const BookEvent = () => {
   return (
     <main className="centered-bottom" id="main" role="main">
@@ -6,13 +8,11 @@ const BookEvent = () => {
           Book Your Event
         </h3>
         <div className="post-body-container">
-          <a href="https://4.bp.blogspot.com/-f_RtQGaipUo/WhzQpjn0wVI/AAAAAAABL7Q/MEKf11XC5R0ruYfw23E9EkV9HBYktXr_gCLcBGAs/s1600/Bookings.png" imageanchor="1"><img border="0" data-original-height="756" data-original-width="945" height="512" src="https://4.bp.blogspot.com/-f_RtQGaipUo/WhzQpjn0wVI/AAAAAAABL7Q/MEKf11XC5R0ruYfw23E9EkV9HBYktXr_gCLcBGAs/s640/Bookings.png" width="640" alt="bookings poster"/></a>
+          <img src={bookingPoster} alt="bookings poster"/>
           <div>
-            <span>*WEEKDAY APPOINTMENTS*</span>
-            <a href="https://my.setmore.com/bookanappointmentv3.do?uniqueKey=d17471a9-0a65-4a79-b3ac-3065eff617f8" target="_blank" rel="noreferrer"><button>Setmore</button></a>
-            <span>SPECIAL NOTE FOR WEEKEND APPOINTMENTS BELOW</span>
-            <span>*WEEKEND APPOINTMENTS*</span>
-            <span>If you are interested in booking a weekend appointment please send an email to <b>annawonw@gmail.com</b> and arrange for your weekend appointment by email. Otherwise if you are interested in a weekday appointment please use our book appointment link above.</span>
+            <a href="https://my.setmore.com/bookanappointmentv3.do?uniqueKey=d17471a9-0a65-4a79-b3ac-3065eff617f8" target="_blank" rel="noreferrer"><button className="appointment-button">Book Weekday Appointment</button></a>
+            <p>WEEKEND APPOINTMENTS</p>
+            <p>For weekend appointments, please send an email to <a href>annawonw@gmail.com</a> and arrange for your weekend appointment by email.</p>
             <div>
               <h3>Kutaputash</h3>
               <h3>(Thank You)</h3>
