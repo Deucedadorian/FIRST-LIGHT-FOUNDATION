@@ -2,7 +2,7 @@ import theHighFive from "../assets/images/image3.jpeg"
 
 const About = () => {
   return (
-    <section className="centered-bottom about">
+    <section className="about">
       <h3 className="name">
         Annawon Weeden
       </h3>
