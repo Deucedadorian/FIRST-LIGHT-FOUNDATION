@@ -72,10 +72,11 @@ function App() {
         // showAside={showAside}
         // setShowAside={setShowAside}
         // toggleAside={toggleAside}
-      />
-        <div className="container mt-2" style={{ marginTop: 40 }}>
+        />
+        <main className="" style={{ marginTop: 40 }}>
           <Switch>
             <Route exact path='/'>
+              <Turtle className={"visible"} />
               <Home />
             </Route>
             <Route path='/about'>
@@ -100,7 +101,7 @@ function App() {
               <FirstLightFun />
             </Route> */}
           </Switch>
-        </div>
+        </main>
       </BrowserRouter>
       {/* <Aside handlePageChange={handlePageChange}
         setHeader={setHeader} 
@@ -110,7 +111,6 @@ function App() {
         showAside={showAside}
       />  */}
       {/* {renderPage()} */}
-      <Turtle className={turtle ?  "visible" : "hidden"} />
     </div>
   );
 }
