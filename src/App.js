@@ -87,9 +87,9 @@ function App() {
             <Route path='/book-event'>
               <BookEvent />
             </Route>
-            <Route path='/public-events'>
+            {/* <Route path='/public-events'>
               <PublicEvents />
-            </Route>
+            </Route> */}
             <Route path='/educational-resources'>
               <EducationalResources />
             </Route>

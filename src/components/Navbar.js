@@ -50,13 +50,13 @@ const Navbar = (props) => {
           Book Event
         </NavLink>
 
-        <NavLink
+        {/* <NavLink
           className="navbar-item"
           activeClassName="is-active"
           to="/public-events"
         >
           Public Events
-        </NavLink>
+        </NavLink> */}
 
         <NavLink
           className="navbar-item"
