@@ -1,6 +1,9 @@
+import Navbar from './Navbar';
+
 const Header = (props) => {
   return (
     <header className="centered-top-container" role="banner">
+      <Navbar />
       <div className="centered-top">
         <div className="section" id="header" name="Header"> {
           props.foundationHeader ? (

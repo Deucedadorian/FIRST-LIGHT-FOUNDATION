@@ -1,23 +1,28 @@
-// import Hamburger from 'hamburger-react';
+import React, { useState } from "react";
 import { NavLink } from 'react-router-dom';
-// import React, { useState } from "react";
-import React from "react";
+import Hamburger from 'hamburger-react';
 
-const Navbar = (props) => {
+const Navbar = () => {
 
-  // const handleClick = (page, showImage, foundationHeader) => {
-  //   props.handlePageChange(page);
-  //   props.setTurtle(showImage);
-  //   props.setHeader(foundationHeader);
-  // }
-
+  const [isOpen, setOpen] = useState(false);
+  
   return (
     <nav 
-      className={ props.isOpen ? "navbar is-primnary" : "hidden" }
+      className="navbar is-primnary"
       role="navigation"
       aria-label="main navigation"
     >
-      <div className="navbar-item-container">
+      <a
+        role="button"
+        className={`navbar-burger burger ${isOpen && "is-active"}`}
+        aria-label="menu"
+        aria-expanded="false"
+        onClick={() => setOpen(!isOpen)}
+        href
+      >
+        <Hamburger />
+      </a>
+      <div className={isOpen ? "navbar-item-container" : "hidden" }>
         <NavLink
           className="navbar-item"
           activeClassName="is-active"
@@ -51,14 +56,6 @@ const Navbar = (props) => {
           Book Event
         </NavLink>
 
-        {/* <NavLink
-          className="navbar-item"
-          activeClassName="is-active"
-          to="/public-events"
-        >
-          Public Events
-        </NavLink> */}
-
         <NavLink
           className="navbar-item"
           activeClassName="is-active"
@@ -66,14 +63,6 @@ const Navbar = (props) => {
         >
           Educational Resources
         </NavLink>
-
-        {/* <NavLink
-          className="navbar-item"
-          activeClassName="is-active"
-          to="/reviews"
-        >
-          Reviews
-        </NavLink> */}
       </div>
     </nav>
   );
