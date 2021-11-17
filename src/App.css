@@ -13,11 +13,11 @@
   pointer-events: none;
 }
 
-#page_body {
+/* #page_body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
+} */
 
 .article-card {
   margin: 30px;
