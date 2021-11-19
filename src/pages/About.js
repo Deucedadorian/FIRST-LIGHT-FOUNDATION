@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 import theHighFive from "../assets/images/image3.jpeg"
 
 const About = () => {

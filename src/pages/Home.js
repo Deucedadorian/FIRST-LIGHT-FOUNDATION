@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 const Home = () => {
     return (
       <main className="centered-bottom" id="main" role="main">

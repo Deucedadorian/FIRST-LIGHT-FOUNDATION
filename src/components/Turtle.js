@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 import turtle from "../assets/images/turtle-shell.jpg";
 
 const Turtle = () => {

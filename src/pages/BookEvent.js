@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 import bookingPoster from "../assets/images/Bookings.png";
 
 const BookEvent = () => {

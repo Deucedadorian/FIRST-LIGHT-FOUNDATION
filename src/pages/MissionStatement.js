@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 const MissionStatement = () => {
     return (
       <section className="mission">
