@@ -1,5 +1,7 @@
 import React from "react";
 
+import '../assets/styles/mission.css';
+
 const MissionStatement = () => {
     return (
       <section className="mission">

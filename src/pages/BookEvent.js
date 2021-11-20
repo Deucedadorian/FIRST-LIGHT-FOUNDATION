@@ -2,6 +2,8 @@ import React from "react";
 
 import bookingPoster from "../assets/images/Bookings.png";
 
+import '../assets/styles/booking.css';
+
 const BookEvent = () => {
   return (
     <main className="centered-bottom" id="main" role="main">

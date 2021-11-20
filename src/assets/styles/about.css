@@ -1,0 +1,18 @@
+/* about styles */
+
+.high-five {
+    width: 600px;
+}
+  
+.name {
+margin-bottom: 30px;
+}
+
+/* .high-five {
+margin-bottom: 30px;
+} */
+
+.about-text {
+margin: 30px 200px;
+font-size: 1.3rem;
+}

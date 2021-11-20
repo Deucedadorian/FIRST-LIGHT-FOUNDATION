@@ -1,6 +1,8 @@
 import React from "react";
 
-import theHighFive from "../assets/images/image3.jpeg"
+import theHighFive from "../assets/images/image3.jpeg";
+
+import '../assets/styles/about.css'
 
 const About = () => {
   return (

@@ -1,0 +1,10 @@
+/* booking page styles */
+
+.appointment-button {
+    margin: 30px;
+    border-radius: 5px;
+    padding: 0 5px;
+    background-color: rgba(108, 44, 168, 0.993);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 4px 4px black;
+}

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter, Switch, Route, } from "react-router-dom";
 
-import './App.css';
+import './assets/styles/App.css';
 
 import Header from './components/Header';
 import Turtle from './components/Turtle';
