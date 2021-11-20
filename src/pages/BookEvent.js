@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import bookingPoster from "../assets/images/Bookings.png";
 
@@ -12,7 +12,7 @@ const BookEvent = () => {
         <div className="post-body-container">
           <img src={bookingPoster} alt="bookings poster"/>
           <div>
-            <a href="https://my.setmore.com/bookanappointmentv3.do?uniqueKey=d17471a9-0a65-4a79-b3ac-3065eff617f8" target="_blank" rel="noreferrer"><button className="appointment-button">Book Weekday Appointment</button></a>
+            <a href="https://my.setmore.com/bookanappointmentv3.do?uniqueKey=d17471a9-0a65-4a79-b3ac-3065eff617f8" target="_blank" rel="noopener noreferrer"><button className="appointment-button">Book Weekday Appointment</button></a>
             <p>WEEKEND APPOINTMENTS</p>
             <p>For weekend appointments, please send an email to <a href>annawonw@gmail.com</a> and arrange for your weekend appointment by email.</p>
             <div>

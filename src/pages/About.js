@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import theHighFive from "../assets/images/image3.jpeg"
 
