@@ -1,0 +1,21 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-card {
+  margin: 30px;
+  padding: 50px;
+  background-color: rgb(31, 37, 0);
+  width:fit-content;
+}
+
+.article-card a {
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  justify-content: center;
+}

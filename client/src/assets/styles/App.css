@@ -13,20 +13,6 @@
   pointer-events: none;
 }
 
-.article-card {
-  margin: 30px;
-  padding: 50px;
-  background-color: rgb(31, 37, 0);
-}
-
-.article-card a {
-  color: #ffffff;
-  display: flex;
-  flex-wrap: wrap;
-  width: 200px;
-  justify-content: center;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -72,10 +58,6 @@ h1 {
 }
 
 /* > end framework styling < */
-
-.turtle-image {
-  width: 100%;
-}
 
 @keyframes App-logo-spin {
   from {
