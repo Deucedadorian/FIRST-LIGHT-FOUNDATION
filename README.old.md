@@ -15,3 +15,5 @@
 [raect-router-dom](https://www.npmjs.com/package/react-router-dom)
 
 [calendly](https://calendly.com/)
+
+[instagram api](https://developers.facebook.com/docs/instagram/oembed) to add Annawons instagram stories and posts to site.
